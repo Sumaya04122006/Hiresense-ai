@@ -1,100 +1,338 @@
-# HireSense AI
 
-**Practice interviews with live feedback on how you sound and look while you answer, then get an AI review of the whole session.**
+<div align="center">
 
-**Live demo:** https://hireesense.lovable.app
+<!-- ANIMATED BLACK & GOLD HERO -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=250&color=0:050505,40:15120A,100:C9A227&text=HIRE%20SENSE%20AI&fontColor=F5D76E&fontSize=55&fontAlignY=36&animation=fadeIn&desc=INTERVIEW%20PRACTICE.%20REAL-TIME%20SIGNALS.%20SMARTER%20FEEDBACK.&descAlignY=59&descSize=13&descColor=FFFFFF" alt="HireSense AI black and gold hero"/>
 
----
+<a href="https://hireesense.lovable.app">
+<img src="https://img.shields.io/badge/✦%20TRY%20THE%20LIVE%20DEMO-C9A227?style=for-the-badge&logoColor=111111" alt="Try HireSense AI"/>
+</a>
+<a href="https://github.com/Sumaya04122006/Hiresense-ai">
+<img src="https://img.shields.io/badge/EXPLORE%20THE%20CODE-111111?style=for-the-badge&logo=github&logoColor=E5BF55" alt="Explore source code"/>
+</a>
 
-## The Problem
+<br/><br/>
 
-Most interview prep tools only look at **what** you say. Interviewers also judge **how** you say it: pace, volume, long pauses, eye contact, fidgeting.
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=17&duration=2800&pause=800&color=E5BF55&center=true&vCenter=true&width=800&height=50&lines=Your+answers+matter.+Your+delivery+does+too.;Practice+out+loud.+Understand+your+patterns.;AI-powered+interview+practice+with+delivery+signals." alt="Animated HireSense AI tagline"/>
 
-- Mock interviews with real people are expensive and hard to schedule.
-- Recording yourself and watching it back is slow and awkward, and nobody gives you a score.
-- Text-only AI tools (paste your answer into ChatGPT) miss delivery completely.
-- You get feedback **after** the habit is already built, never while you're doing it.
+<br/>
 
-## The Solution
+**An AI-powered interview practice experience that looks beyond the words.**
 
-HireSense AI runs a mock interview in your browser:
+Practice role-specific interviews, observe live speaking and face-position indicators, and receive a structured AI review of your session.
 
-1. Pick a role, or type in a custom one.
-2. Answer up to **20 role-specific questions** out loud, on camera.
-3. While you speak, **live indicators** show your volume, speaking pace (WPM), pauses, whether your face is in frame, head movement, and look-aways.
-4. Each answer is transcribed.
-5. At the end, an LLM reviews the **whole session**: transcripts plus the measured audio and video signals. You get a score, strengths, weaknesses, delivery notes, concrete suggestions, and a rewritten version of your weakest answer.
+<br/>
 
-## The "Aha" Moment
+<img src="https://img.shields.io/badge/AI-Gemini%202.5%20Flash-C9A227?style=flat-square" alt="Gemini AI"/>
+<img src="https://img.shields.io/badge/Frontend-React%2019-111111?style=flat-square&logo=react&logoColor=61DAFB" alt="React"/>
+<img src="https://img.shields.io/badge/Computer%20Vision-MediaPipe-C9A227?style=flat-square" alt="MediaPipe"/>
+<img src="https://img.shields.io/badge/Analysis-Browser--based-111111?style=flat-square" alt="Browser-based analysis"/>
+<img src="https://img.shields.io/badge/Deployment-Lovable-C9A227?style=flat-square" alt="Lovable deployment"/>
 
-You see **"Pace: Fast"** or **"Looking away"** come up *while you're mid-sentence*, and you fix it on the spot. Then the final report links those delivery habits to what you actually said, across all your answers, not just one.
-
-## What Makes It Useful
-
-- **Real-time, on-device analysis.** Audio and video are analyzed in the browser. No video is uploaded or processed on a server.
-- **Evaluates the whole session.** Feedback is based on patterns across every answer, not one cherry-picked response.
-- **Feedback based on signals.** The evaluation prompt tells the model not to invent emotions or confidence levels the measured data doesn't support.
-- **No account needed.** Open the link and start.
-- **Privacy.** Media is not stored. Audio is sent only to be transcribed, then thrown away.
-
-## Supported Roles (20 curated questions each)
-
-- Frontend Engineer
-- Backend Engineer
-- Product Manager
-- Data Scientist
-- UX Designer
-- Sales Development Rep
-- Custom role (free text)
+</div>
 
 ---
 
-## Tech Stack
+## ◈ The idea
 
-| Layer | Technology |
-|---|---|
-| Framework | TanStack Start (React 19, SSR) + Vite 7 |
-| Styling | Tailwind CSS v4, shadcn/ui |
-| Audio analysis | Web Audio API (`AnalyserNode`, RMS volume) |
-| Video analysis | MediaPipe Tasks Vision `FaceLandmarker` (WASM/GPU, in-browser) |
-| Recording | `MediaRecorder` (WebM) |
-| Backend | Lovable Cloud (Supabase Edge Functions, Deno) |
-| AI | Lovable AI Gateway → `google/gemini-2.5-flash` |
-| Hosting | Lovable (Cloudflare edge) |
+An interview is not just a collection of answers.
 
-### Edge Functions
+Your explanation, pacing, pauses, vocal delivery, and on-camera presentation can all affect how your response comes across. Yet many interview preparation tools focus primarily on answer content.
+
+**HireSense AI explores a more complete approach to interview practice.**
+
+It combines browser-based audio and face-position signals with speech transcription and a final AI review, helping users reflect on both what they said and how they delivered it.
+
+> Practice the answer. Observe the delivery. Learn what to improve.
+
+---
+
+## ◈ Experience the workflow
+
+<div align="center">
+
+| 01 · CONFIGURE | 02 · PRACTICE | 03 · REVIEW |
+|:---:|:---:|:---:|
+| Choose a role or enter a custom one | Answer questions using your microphone and camera | Receive a structured review of your session |
+| <img src="https://img.shields.io/badge/Role--specific-111111?style=flat-square&logoColor=E5BF55" alt="Role-specific questions"/> | <img src="https://img.shields.io/badge/Live%20signals-C9A227?style=flat-square" alt="Live signals"/> | <img src="https://img.shields.io/badge/Actionable%20feedback-111111?style=flat-square" alt="Actionable feedback"/> |
+
+</div>
+
+### 01 — Choose your interview
+
+Select one of the curated roles or enter a custom role to generate a relevant interview question.
+
+### 02 — Speak and observe
+
+During your response, browser-based analysis provides indicators related to:
+
+- Speaking volume
+- Estimated speaking pace
+- Pauses
+- Face presence in the camera frame
+- Head position and movement
+- Potential look-aways based on face position
+
+These indicators are intended to help users notice delivery patterns while practicing.
+
+### 03 — Receive your review
+
+Each response is transcribed. After the interview, the application sends session information for a structured AI evaluation.
+
+The report can include:
+
+- Overall score
+- Strengths and weaknesses
+- Answer-content feedback
+- Delivery observations
+- Practical improvement suggestions
+- A rewritten version of the weakest answer
+
+The goal is not simply to assign a score. It is to turn an interview practice session into a useful improvement plan.
+
+---
+
+## ◈ What makes HireSense different?
+
+<details>
+<summary><b>01 · Live delivery signals</b></summary>
+
+The browser analyzes audio levels and face landmarks while the user answers.
+
+This allows the interface to display immediate indicators without making an AI request for every live update.
+
+**Engineering distinction:** the real-time signals are computed locally; they are not live judgments generated by an LLM.
+
+</details>
+
+<details>
+<summary><b>02 · Whole-session evaluation</b></summary>
+
+The final review considers the collected transcripts and available delivery summaries across the session, rather than evaluating only an isolated answer.
+
+This is designed to make feedback more useful for identifying recurring patterns.
+
+</details>
+
+<details>
+<summary><b>03 · Feedback grounded in measured signals</b></summary>
+
+The evaluation instructions are designed to discourage unsupported claims about confidence, emotion, or presentation.
+
+The application provides measurable indicators as context, but those signals cannot reliably establish a person's emotional state or overall interview ability.
+
+</details>
+
+<details>
+<summary><b>04 · Low-friction access</b></summary>
+
+The application is designed to be usable without creating an account.
+
+Users can open the live demo and start practicing, subject to browser compatibility and camera or microphone permissions.
+
+</details>
+
+<details>
+<summary><b>05 · Privacy-conscious processing</b></summary>
+
+Audio and video analysis for live indicators happens in the browser. Video is not uploaded to the server according to the current design.
+
+Recorded answer audio is sent for transcription, while the final evaluation uses session information.
+
+See the privacy and data-flow section below for the important distinction between local analysis and server-side AI processing.
+
+</details>
+
+---
+
+## ◈ Supported interview roles
+
+The current experience includes curated questions for the following roles, plus a custom-role option.
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/Frontend%20Engineer-111111?style=for-the-badge&logo=react&logoColor=61DAFB" alt="Frontend Engineer"/>
+<img src="https://img.shields.io/badge/Backend%20Engineer-111111?style=for-the-badge&logo=fastapi&logoColor=E5BF55" alt="Backend Engineer"/>
+<img src="https://img.shields.io/badge/Product%20Manager-111111?style=for-the-badge&logoColor=E5BF55" alt="Product Manager"/>
+<img src="https://img.shields.io/badge/Data%20Scientist-111111?style=for-the-badge&logo=python&logoColor=E5BF55" alt="Data Scientist"/>
+<img src="https://img.shields.io/badge/UX%20Designer-111111?style=for-the-badge&logo=figma&logoColor=E5BF55" alt="UX Designer"/>
+<img src="https://img.shields.io/badge/Sales%20Development-111111?style=for-the-badge&logoColor=E5BF55" alt="Sales Development Representative"/>
+<img src="https://img.shields.io/badge/Custom%20Role-C9A227?style=for-the-badge&logoColor=111111" alt="Custom role"/>
+
+</div>
+
+Each curated role has 20 questions available in the question set. Users can practice up to 20 questions in a session.
+
+---
+
+## ◈ System architecture
+
+The application separates low-latency browser analysis from cloud-based transcription and final evaluation.
+
+```mermaid
+flowchart TD
+    A[User selects role] --> B[Interview questions]
+    B --> C[Camera and microphone]
+
+    C --> D[MediaPipe FaceLandmarker]
+    C --> E[Web Audio API]
+    C --> F[MediaRecorder]
+
+    D --> G[Face presence and head-position signals]
+    E --> H[Volume, pauses and estimated pace]
+
+    G --> I[Live browser indicators]
+    H --> I
+
+    F --> J[Transcription Edge Function]
+    J --> K[Gemini 2.5 Flash]
+    K --> L[Answer transcripts]
+
+    I --> M[Session records]
+    L --> M
+
+    M --> N[Evaluation Edge Function]
+    N --> O[Lovable AI Gateway]
+    O --> P[Structured interview report]
+```
+
+<sub>Architecture reflects the described application design. Actual deployment behavior should be verified against the current implementation.</sub>
+
+---
+
+## ◈ Under the hood
+
+| Layer | Technology | Responsibility |
+|---|---|---|
+| Application | TanStack Start, React 19, Vite 7 | User interface and application framework |
+| Styling | Tailwind CSS v4, shadcn/ui | Components and interface styling |
+| Audio analysis | Web Audio API, `AnalyserNode` | RMS-based volume and audio-level analysis |
+| Face analysis | MediaPipe Tasks Vision, `FaceLandmarker` | Face landmarks and position-derived indicators |
+| Recording | `MediaRecorder` | Capturing answer audio in WebM format |
+| Cloud backend | Lovable Cloud, Supabase Edge Functions | Server-side application operations |
+| Runtime | Deno | Edge function execution |
+| AI integration | Lovable AI Gateway | Model access |
+| Model | `google/gemini-2.5-flash` | Transcription and structured evaluation |
+| Hosting | Lovable | Application deployment |
+
+### Edge functions
 
 | Function | Purpose |
 |---|---|
-| `generate-question` | Writes a question for custom roles |
-| `transcribe-audio` | Turns recorded answer audio into a transcript (Gemini multimodal) |
-| `evaluate-answer` | Returns a structured evaluation via forced tool-calling: `{ score, content, delivery, improvedAnswer, suggestions }` |
+| `generate-question` | Generates a question for a custom interview role |
+| `transcribe-audio` | Transcribes recorded answer audio |
+| `evaluate-answer` | Produces a structured evaluation using constrained tool-calling output |
+
+The evaluation response is designed around fields such as:
+
+`score` · `content` · `delivery` · `improvedAnswer` · `suggestions`
 
 ---
 
-## How It Works
+## ◈ The live-analysis pipeline
 
 ```text
-Browser                                         Cloud
--------                                         -----
-Camera ─► MediaPipe FaceLandmarker ─► face %, movement, look-aways ─┐
-Mic    ─► Web Audio AnalyserNode   ─► volume, WPM est., pauses     ─┤
-Mic    ─► MediaRecorder (webm)  ───────────────► transcribe-audio ──┤
-                                                                    ▼
-                         per-answer record { transcript, audio, video summary }
-                                                                    ▼
-                    after last answer ──────────► evaluate-answer (LLM, 1 call)
-                                                                    ▼
-                                              Feedback page (score + report)
+MICROPHONE
+    │
+    ├──► Web Audio API
+    │       ├── RMS volume
+    │       ├── Speaking threshold
+    │       ├── Pause indicators
+    │       └── Estimated words per minute
+    │
+    └──► MediaRecorder
+            └──► Recorded answer audio
+                     └──► Transcription service
+
+CAMERA
+    │
+    └──► MediaPipe FaceLandmarker
+              ├── Face presence
+              ├── Head-position changes
+              └── Position-based look-away indicator
+
+SESSION DATA
+    │
+    └──► Final evaluation request
+              └──► Structured AI feedback
 ```
 
-**No GPT calls during answering.** All live feedback is local math. The LLM is only called for transcription and the final evaluation.
+**Key architectural decision:** live indicators use browser-side calculations rather than continuous LLM calls. Cloud AI is reserved for transcription and the final evaluation workflow.
 
 ---
 
-## Honest Limitations (no sugar coat)
+## ◈ Honest limitations
 
-- **WPM is estimated**, not counted. It comes from time spent speaking × a syllable heuristic, not from live speech recognition.
-- **"Look-away" means head position**, not eye tracking. It fires when your nose landmark leaves the center of the frame.
-- **Speaking detection is a volume threshold.** Background noise can count as speech.
-- **Transcription uses a general-purpose LLM** (Gemini 2.5 Flash), not a dedicated speech-to-text model like Whisper. Accuracy is good but not best-in-class.
+No sugar-coating: these indicators are useful practice aids, not precise measurements of interview performance.
+
+- **Speaking pace is estimated.** It uses a timing and syllable heuristic rather than verified live speech recognition.
+- **Look-away is not eye tracking.** The indicator is based on face or nose landmark position, not a reliable measurement of eye gaze.
+- **Speaking detection is threshold-based.** Background noise can be misclassified as speech, while quiet speech may be missed.
+- **Transcription can make mistakes.** Gemini 2.5 Flash is used for transcription; results can be affected by accent, noise, and recording quality.
+- **AI feedback can be wrong.** A structured report is still model-generated and may miss context or offer imperfect suggestions.
+- **Scores are not objective hiring predictions.** They should be treated as practice feedback, not a measure of a candidate's actual employability or professional worth.
+- **Browser compatibility matters.** Camera access, microphone access, recording support, and device performance can affect the experience.
+
+These limitations are part of the engineering problem, not details to hide from users.
+
+---
+
+## ◈ Privacy & data flow
+
+Privacy claims need to distinguish local processing from cloud processing.
+
+- **Live video analysis:** face-landmark analysis runs in the browser; the described design does not upload video for server-side processing.
+- **Audio transcription:** recorded answer audio is sent to the transcription service.
+- **Final evaluation:** transcripts and collected session signals are sent for the final AI review.
+- **Storage:** the application is designed not to retain interview media, but actual retention also depends on implementation, logs, service configuration, and provider policies.
+
+Do not enter sensitive personal information into practice answers. Review the live application's privacy disclosures before using it with real interview material.
+
+---
+
+## ◈ Future improvements
+
+Potential next steps for making HireSense AI more reliable and useful:
+
+- [ ] Replace heuristic speaking-pace estimation with transcript-aligned timing.
+- [ ] Improve speech detection in noisy environments.
+- [ ] Distinguish head orientation from actual eye gaze more carefully.
+- [ ] Add question-by-question progress and session summaries.
+- [ ] Track recurring feedback patterns across practice sessions, with explicit user consent.
+- [ ] Add evaluation calibration and clearer scoring rubrics.
+- [ ] Expand interview question sets and role-specific evaluation criteria.
+- [ ] Test accessibility, device compatibility, and privacy behavior systematically.
+
+These are proposed improvements, not claims that the features are already implemented.
+
+---
+
+## ◈ About the project
+
+HireSense AI explores how browser-based signal processing and generative AI can work together to create a more complete interview-practice experience.
+
+Built by **Sumaya Fathima**, an Information Technology undergraduate specializing in Artificial Intelligence at Liwa University, Abu Dhabi, UAE.
+
+<div align="center">
+
+<a href="https://hireesense.lovable.app">
+<img src="https://img.shields.io/badge/TRY%20HIRESENSE%20AI-C9A227?style=for-the-badge&logoColor=111111" alt="Try HireSense AI"/>
+</a>
+
+<a href="https://github.com/Sumaya04122006">
+<img src="https://img.shields.io/badge/MORE%20PROJECTS-111111?style=for-the-badge&logo=github&logoColor=E5BF55" alt="More projects"/>
+</a>
+
+<a href="https://www.linkedin.com/in/sumaya-fathima-7148063a9">
+<img src="https://img.shields.io/badge/CONNECT-LinkedIn-C9A227?style=for-the-badge&logo=linkedin&logoColor=111111" alt="Connect on LinkedIn"/>
+</a>
+
+<br/><br/>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=140&section=footer&color=0:C9A227,50:17130A,100:050505" alt="Black and gold footer"/>
+
+**Better practice. Clearer feedback. More intentional improvement.**
+
+<sub>HireSense AI · AI-assisted interview practice</sub>
+
+</div>
